@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+    webapp:
+        container_name: webapp
+        build: "webapp/"
+        working_dir: /code/webapp
+        volumes:
+            - ./webapp:/code/webapp
+        ports:
+            - 80:3000
+        env_file: .env
+
+        
+volumes:
+    webapp:
+
+
+
+
+
